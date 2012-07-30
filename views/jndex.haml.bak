@@ -1,0 +1,16 @@
+%h1 Hello Wild Wacky World
+
+should I use HAML or plain HTML?
+
+%a{:href => '/alexx_c/index.html'} alexx_c
+%a{:href => '/connoisseur/index.html'} connoisseur
+%a{:href => '/CSS3_design_two/index.html'} CSS3_design_two
+%a{:href => '/CSS3_six_dark/index.html'} CSS3_six_dark
+%a{:href => '/CSS3_three/index.html'} CSS3_three
+%a{:href => '/downtobiz/index.html'} downtobiz
+%a{:href => '/photo_style_two/index.html'} photo_style_two
+%a{:href => '/scenic_photo/index.html'} scenic_photo
+
+
+
+
