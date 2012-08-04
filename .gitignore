@@ -1,0 +1,6 @@
+########################################
+## Stop bugging me about these files
+
+Guardfile
+*~
+
