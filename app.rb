@@ -4,6 +4,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'erb'
+#require 'pp'
 
 set :root, APP_ROOT
 set :public_folder, File.dirname(__FILE__) + '/public'
@@ -67,6 +68,11 @@ end
 #####################################
 get '/contact/?' do
   erb :contact
+end
+
+post '/contact/?' do
+#  pp params
+  redirect :index
 end
 
 
