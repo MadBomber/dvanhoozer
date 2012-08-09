@@ -33,6 +33,13 @@ get '/bio/?' do
   erb :bio
 end
 
+get '/about/?' do
+  erb :bio
+end
+
+
+
+=begin
 #####################################
 get '/roles/?' do
   erb :roles
@@ -75,4 +82,5 @@ post '/contact/?' do
   redirect :index
 end
 
+=end
 
