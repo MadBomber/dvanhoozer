@@ -95,7 +95,7 @@ a:hover {
 blockquote { 
   margin: 20px 0; 
   padding: 10px 20px 0 20px;
-  border: 1px solid #E5E5DB;
+  border: 3px solid #E5E5DB;
   background: #FFF;
 }
 
@@ -253,7 +253,7 @@ footer {
   font: normal 100% arial, sans-serif;
   height: 85px;
   padding: 27px 0 5px 0;
-  text-align: center; 
+  text-align: left; 
   color: #FFF;
   line-height: 14px;
   background: transparent url(../images/transparent.png) repeat;
@@ -475,3 +475,4 @@ ul#nav ul li a {
 ul#nav li a:hover,ul#nav li a:focus { 
   color: #05CCDE;
 }
+

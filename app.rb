@@ -16,6 +16,47 @@ error { @error = request.env['sinatra_error'] ; erb :'500' }
 
 
 #####################################
+helpers do
+  def prev_next(prev_page, next_page)
+    s = <<EOS1
+    <HR>
+    <p style="font-size:40px">
+    <strong>
+EOS1
+  
+    unless prev_page.empty?
+    s += <<EOS2
+    <span class="left">
+      <a href="/#{prev_page}">
+        <=- PREV
+      </a>
+    </span>
+EOS2
+    end
+
+    unless next_page.empty?
+    s += <<EOS3
+    <span class="right">
+      <a href="/#{next_page}">
+        NEXT -=>
+      </a>
+    </span>
+    </p>
+EOS3
+    end
+    
+    s += <<EOS4
+    </strong>
+    </p>
+EOS4
+  
+    return s
+  end
+
+end
+
+
+#####################################
 get '/' do
   erb :index
 end
@@ -38,8 +79,6 @@ get '/about/?' do
 end
 
 
-
-=begin
 #####################################
 get '/roles/?' do
   erb :roles
@@ -49,6 +88,8 @@ get '/roles_:name/?' do
   erb :"roles_#{params[:name]}"
 end
 
+
+=begin
 #####################################
 get '/industries/?' do
   erb :industries
